@@ -1,0 +1,97 @@
+=separator
+  content: ''
+  position: absolute
+  background-repeat: repeat-x
+  background-size: 40%
+  height: 100px
+  width: 100%
+.countrylist
+  .container
+    .blocks
+      .flex--
+        &active, &preStart
+          transition: all .5s
+          opacity: 1
+    .animate--
+      &start
+        transition: all .5s
+        opacity: 0
+        transform: translateY(-200px)
+      &end
+        transition: all .5s
+        transform: translateY(-200px)
+        opacity: 0
+    .slider__navi a
+      display: block
+      height: 10px
+      width: 20px
+      margin: 20px 0
+      text-indent: -9999px
+      box-shadow: none
+      border: none
+      background: black
+      border: 1px solid #ffffff71
+      border-radius: 20px
+      transition: all .5s
+      &:first-child
+        margin-top: 298px
+      &.active
+        background: white
+  background: url(./third_section_bg.png) center center/cover no-repeat
+  background-attachment: fixed
+  position: relative
+  padding: 130px 0
+  &:before
+    background: url(./white_separator2.png)
+    background-position-y: top
+    top: 0px
+    +separator
+  &:after
+    background: url(./black_separator.png)
+    background-position-y: bottom
+    bottom: 0px
+    +separator
+  transform: 1s all
+  .countries
+    height: 700px
+    transform-origin: right center
+    .country
+      height: inherit
+      width: inherit
+      z-index: 0
+      &_
+        &box
+          height: inherit
+          width: inherit
+        &info
+          margin-right: 20%
+          margin-left: 5%
+        &name
+          font-size: 400%
+          padding-top: 50px
+          color: white
+        &descr
+          margin-left: .5%
+          margin-top: 5px
+          color: #bbbbbb
+          font-size: 100%
+          line-height: 20px
+        &skin
+          position: absolute
+          top: 70px
+          right: 0
+          z-index: -1
+          height: 80%
+          img
+            right: -5%
+            margin: 0px auto
+            transform: scale(.85)
+        &pres
+          font-family: 'Minecraft'
+          font-size: 120%
+          background: rgba(0, 0, 0, .7)
+          color: #0fc21b
+          margin: 0px 30px
+          text-align: center
+          padding: 5px 5px
+          right: 4%

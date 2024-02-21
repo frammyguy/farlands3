@@ -1,0 +1,33 @@
+{
+    "main": "Main",
+    "rules": "Rules",
+    "donations": "Donuts",
+    "forPlayers": "Players",
+    "map": "Map",
+    "features": "Features",
+
+    "joinNplay": "Join and play!",
+    "apply": "Apply now",
+
+    "promo": "Private Minecraft server",
+    "promo_desc": "Vanilla server where you can develop together with other players, build cities, strengthen the internal economy and even create your own state!",
+    "gear_title": "Responsive administration",
+    "gear_desc": "Our team will never leave you in trouble and will answer all your questions.",
+    "refresh_title": "Relevance",
+    "refresh_desc": "We play on version 1.20 and follow all the new products and updates!",
+    "server_title": "The server works 24/7",
+    "server_desc": "Play on FarLands anytime, early in the morning or late in the evening.",
+    "castle_title": "Build what you want",
+    "castle_desc": "Get together, have fun and build huge projects in a matter of days!",
+    "trust_title": "Everything is built on trust",
+    "trust_desc": "We do not have privates, teleports, or other cheating commands.",
+    "money_title": "Free and no license",
+    "money_desc": "It doesn't matter what launcher you use. Join the game with or without a license.",
+
+    "rank_nims": "Technical admin",
+    "rank_frammy": "Organization, marketing",
+    "desc_nims": "Kind admin",
+    "desc_frammy": "Evil admin",
+
+    "loading": "loading..."
+}

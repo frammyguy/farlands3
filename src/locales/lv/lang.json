@@ -1,0 +1,33 @@
+{
+    "main": "Galvēna",
+    "rules": "Līkumi",
+    "donations": "Ziedot",
+    "forPlayers": "Spēlētājiem",
+    "map": "Karte",
+    "features": "Iespējas",
+
+    "joinNplay": "Nāc un spēlē!",
+    "apply": "Pieteikties",
+
+    "promo": "Privātais Minecraft serveris",
+    "promo_desc": "Vanilla serveris, kurā var attīstīties kopā ar citiem spēlētājiem, būvēt pilsētas, stiprināt iekšējo ekonomiku un pat izveidot savu valsti!",
+    "gear_title": "Atsaucīga administrācija",
+    "gear_desc": "Mūsu komanda nekad neatstās jūs nepatikšanās un atbildēs uz visiem jūsu jautājumiem.",
+    "refresh_title": "Atbilstība",
+    "refresh_desc": "Mēs spēlējam ar versiju 1.20 un sekojam visiem jaunajiem produktiem un atjauninājumiem!",
+    "server_title": "Serveris strādā 24/7",
+    "server_desc": "Spēlējiet FarLands jebkurā laikā, agri no rīta vai vēlu vakarā.",
+    "castle_title": "Veidojiet to, ko vēlaties",
+    "castle_desc": "Sanāciet kopā, izklaidējieties un dažu dienu laikā izveidojiet milzīgus projektus!",
+    "trust_title": "Viss ir balstīts uz uzticēšanos",
+    "trust_desc": "Mums nav privāta, teleportus vai citu krāpšanās komandu.",
+    "money_title": "Bezmaksas un bez licences",
+    "money_desc": "Nav svarīgi, kādu palaišanas programmu izmantojat. Pievienojieties spēlei ar vai bez licences.",
+
+    "rank_nims": "Tehniskais administrators",
+    "rank_frammy": "Organizēšana, mārketings",
+    "desc_nims": "Labs admins",
+    "desc_frammy": "Ļauns admins",
+
+    "loading": "ielāde..."
+}

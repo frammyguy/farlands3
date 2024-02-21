@@ -1,0 +1,41 @@
+@font-face 
+    font-family: 'Minecraft'
+    src: url('fonts/Minecraft.eot')
+    src: local('fonts/Minecraft Regular'), local('Minecraft'), url('fonts/Minecraft.eot?#iefix') format('embedded-opentype'), url('fonts/Minecraft.woff2') format('woff2'), url('fonts/Minecraft.woff') format('woff'), url('fonts/Minecraft.ttf') format('truetype'), url('fonts/Minecraft.svg#Minecraft') format('svg')
+    font-weight: normal
+    font-style: normal
+    font-display: swap
+  
+=separator
+  content: ''
+  position: absolute
+  background-repeat: repeat-x
+  background-size: 40%
+  height: 100px
+  width: 100%
+
+.main
+  background: url(./main_bg.png) center center/cover no-repeat
+  background-attachment: fixed
+  height: 900px
+  padding-bottom: 200px
+  position: relative
+  display: flex
+  align-items: center
+  &:after
+    background: url(./white_separator.png)
+    background-position-y: bottom
+    bottom: 0px
+    +separator
+  &-logo
+    font-family: 'Minecraft'
+    font-weight: 300
+    text-align: center
+    color: rgba(255, 255, 255, 0.8)
+    font-size: 100px
+    transition: 1s all
+    user-select: none
+    &:hover
+      color: rgba(255, 255, 255, 1)
+      filter: drop-shadow(0px 0 10px rgb(255 255 255 / 0.25))
+      cursor: default
