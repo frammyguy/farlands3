@@ -7,7 +7,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './index.sass';
 import Header from './pages/header/header';
 import Main from './pages/main/main';
-import Rules from './pages/rules/rules';
+import News from './pages/news/news';
+import Features from './pages/features/features';
 import Footer from './pages/footer/footer';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -18,7 +19,8 @@ root.render(
       <Header />
         <Routes>
           <Route path="/" element={<Main />} />
-          <Route path="/rules" element={<Rules />} />
+          <Route path="/news" element={<News />} />
+          <Route path="/features" element={<Features />} />
         </Routes>
       <Footer />
       </BrowserRouter>

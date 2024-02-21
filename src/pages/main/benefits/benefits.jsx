@@ -4,13 +4,12 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 
-import Logo from "./farlands_logo.png";
-import Castle from "./castle.svg";
-import Gear from "./gear.svg";
-import Money from "./money.svg";
-import Refresh from "./refresh.svg";
-import Server from "./server.svg";
-import Trust from "./trust.svg";
+import Castle from "../../../img/castle.svg";
+import Gear from "../../../img/gear.svg";
+import Money from "../../../img/money.svg";
+import Refresh from "../../../img/refresh.svg";
+import Server from "../../../img/server.svg";
+import Trust from "../../../img/trust.svg";
 import "./benefits.sass";
 
 function Advice(props) {
@@ -32,7 +31,6 @@ export default function Benefits(props) {
     <div className="benefits">
       <Container>
         <Row className="comments">
-          {/* <img src={Logo} alt="Server logo in benefits section" /> */}
           <div className="advice_title_main text-center">{props.t("promo")}</div>
           <div className="advice_subtitle_main text-center">
             {props.t("promo_desc")}

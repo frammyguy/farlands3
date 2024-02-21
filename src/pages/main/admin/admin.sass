@@ -8,81 +8,81 @@
 
 .adminlist
     position: relative
-    background-image: url(./black_bg.png)
+    background-image: url(../../../img/black_bg.png)
     background-position: 0% 0%
     background-repeat: repeat
     background-size: 20%
     padding: 20px 0
     &:before
-        background: url(./black_separator2.png)
+        background: url(../../../img/black_separator2.png)
         background-position-y: top
         top: 0px
         +separator
-.contact
-    display: flex
-    justify-content: space-around
-.card
-    // background: url(../img/cards_bg.png)
-    background: url(./white_bg.png)
-    background-size: 500px
-    background-repeat: repeat
-    &_admins
-        width: 20vw
-    img
-        width: 20%
-        margin: 20px auto
-        display: block
-        &_name
+    .contact
+        display: flex
+        justify-content: space-around
+    .card
+        // background: url(../img/cards_bg.png)
+        background: url(../../../img/white_bg.png)
+        background-size: 500px
+        background-repeat: repeat
+        &_admins
+            width: 20vw
+        img
+            width: 20%
+            margin: 20px auto
             display: block
-.social
-    margin: 0 auto
-    a
-        margin: 0px 0.2vw
-        text-decoration: none
-        cursor: pointer
-    svg
-        fill: black
-        transition: all .2s ease
-        display: inline-block
-    &_inst
-        transition: all .2s ease
-        svg:hover
-            fill: url(#gradient)
-    &_disc
-        button
-            border-width: 0px
-        svg:hover
-            fill: #5865F2
-    &_telegram
-        svg:hover
-            fill: #0088cc
-    .tooltip_c
-        position: relative
-        display: inline-block
-        .tooltiptext
-            visibility: hidden
-            width: 140px
-            background-color: #555
-            color: #fff
-            text-align: center
-            border-radius: 6px
-            padding: 5px
-            position: absolute
-            z-index: 1
-            bottom: 150%
-            left: 50%
-            margin-left: -75px
-            opacity: 0
-            transition: opacity 0.3s
-        &:after
-            content: ""
-            position: absolute
-            top: 100%
-            left: 50%
-            margin-left: -5px
-            border-width: 5px
-            border-style: solid
-            border-color: #555 transparent transparent transparent
-        &:hover .tooltiptext
-            visibility: visible
-            opacity: 1
+            &_name
+                display: block
+    .social
+        margin: 0 auto
+        a
+            margin: 0px 0.2vw
+            text-decoration: none
+            cursor: pointer
+        svg
+            fill: black
+            transition: all .2s ease
+            display: inline-block
+        &_inst
+            transition: all .2s ease
+            svg:hover
+                fill: url(#gradient)
+        &_disc
+            button
+                border-width: 0px
+            svg:hover
+                fill: #5865F2
+        &_telegram
+            svg:hover
+                fill: #0088cc
+        .tooltip_c
+            position: relative
+            display: inline-block
+            .tooltiptext
+                visibility: hidden
+                width: 140px
+                background-color: #555
+                color: #fff
+                text-align: center
+                border-radius: 6px
+                padding: 5px
+                position: absolute
+                z-index: 1
+                bottom: 150%
+                left: 50%
+                margin-left: -75px
+                opacity: 0
+                transition: opacity 0.3s
+            &:after
+                content: ""
+                position: absolute
+                top: 100%
+                left: 50%
+                margin-left: -5px
+                border-width: 5px
+                border-style: solid
+                border-color: #555 transparent transparent transparent
+            &:hover .tooltiptext
+                visibility: visible
+                opacity: 1

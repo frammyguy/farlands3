@@ -73,7 +73,7 @@ export default function Countries(props) {
                             {list.Mayor}
                           </div>
                           <div className="country_descr">
-                            Жители: {list.Players}
+                            Жители: {list.Players.substring(0, list.Players.length-1)}
                           </div>
                           {/* <div className="country_descr">
                             <img src={list.Flag} alt="country flag" />

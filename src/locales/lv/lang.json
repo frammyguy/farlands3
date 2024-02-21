@@ -3,11 +3,19 @@
     "rules": "Līkumi",
     "donations": "Ziedot",
     "forPlayers": "Spēlētājiem",
+    "news": "Zīņas",
     "map": "Karte",
     "features": "Iespējas",
 
     "joinNplay": "Nāc un spēlē!",
     "apply": "Pieteikties",
+
+    "modal_name":"Your name",
+    "modal_age":"Your age",
+    "modal_telegram":"Your telegram",
+    "modal_link":"Link to another social network (not mail!)",
+    "modal_referal":"Referral (if you were invited)",
+    "modal_nickname":"Your nickname",
 
     "promo": "Privātais Minecraft serveris",
     "promo_desc": "Vanilla serveris, kurā var attīstīties kopā ar citiem spēlētājiem, būvēt pilsētas, stiprināt iekšējo ekonomiku un pat izveidot savu valsti!",
@@ -28,6 +36,44 @@
     "rank_frammy": "Organizēšana, mārketings",
     "desc_nims": "Labs admins",
     "desc_frammy": "Ļauns admins",
+
+    "lvTime": "Pirms ",
+
+    "year1": " gada",
+    "year2": " gadiem",
+    "year&1": " gada",
+    "year&2": " gadiem",
+    "years": " gadiem",
+    
+    "month1": " mēneša",
+    "month2": " mēnešiem",
+    "month&1": " mēneša",
+    "month&2": " mēnešiem",
+    "months": " mēnešiem",
+
+    "week1": " nedēļas",
+    "week2": " nedēļām",
+    "week&1": " nedēļas",
+    "week&2": " nedēļām",
+    "weeks": " nedēļām",
+
+    "day1": " dienas",
+    "day2": " dienām",
+    "day&1": " dienas",
+    "day&2": " dienām",
+    "days": " dienām",
+
+    "hour1": " stundas",
+    "hour2": " stundām",
+    "hour&1": " stundas",
+    "hour&2": " stundām",
+    "hours": " stundām",
+
+    "minute1": " minūtes",
+    "minute2": " minūtēm",
+    "minute&1": " minūtes",
+    "minute&2": " minūtēm",
+    "minutes": " minūtēm",
 
     "loading": "ielāde..."
 }

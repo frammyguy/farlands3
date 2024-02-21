@@ -3,11 +3,19 @@
     "rules": "Rules",
     "donations": "Donuts",
     "forPlayers": "Players",
+    "news": "News",
     "map": "Map",
     "features": "Features",
 
     "joinNplay": "Join and play!",
     "apply": "Apply now",
+
+    "modal_name":"Tavs vārds",
+    "modal_age":"Tavs vecums",
+    "modal_telegram":"Jūsu telegrams",
+    "modal_link":"Saite uz citu sociālo tīklu (nevis pasts!)",
+    "modal_referal":"Referals (ja esat uzaicināts)",
+    "modal_nickname":"Jūsu nickname",
 
     "promo": "Private Minecraft server",
     "promo_desc": "Vanilla server where you can develop together with other players, build cities, strengthen the internal economy and even create your own state!",
@@ -28,6 +36,44 @@
     "rank_frammy": "Organization, marketing",
     "desc_nims": "Kind admin",
     "desc_frammy": "Evil admin",
+
+    "lvTime": "",
+
+    "year1": " year ago",
+    "year2": " years ago",
+    "year&1": " years ago",
+    "year&2": " years ago",
+    "years": " years ago",
+    
+    "month1": " month ago",
+    "month2": " months ago",
+    "month&1": " months ago",
+    "month&2": " months ago",
+    "months": " months ago",
+
+    "week1": " week ago",
+    "week2": " weeks ago",
+    "week&1": " weeks ago",
+    "week&2": " weeks ago",
+    "weeks": " weeks ago",
+
+    "day1": " day ago",
+    "day2": " days ago",
+    "day&1": " days ago",
+    "day&2": " days ago",
+    "days": " days ago",
+
+    "hour1": " hour ago",
+    "hour2": " hours ago",
+    "hour&1": " hours ago",
+    "hour&2": " hours ago",
+    "hours": " hours ago",
+
+    "minute1": " minute ago",
+    "minute2": " minutes ago",
+    "minute&1": " minutes ago",
+    "minute&2": " minutes ago",
+    "minutes": " minutes ago",
 
     "loading": "loading..."
 }

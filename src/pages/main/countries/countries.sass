@@ -14,12 +14,12 @@
           opacity: 1
     .animate--
       &start
-        transition: all .5s
+        transition: all .1s
         opacity: 0
-        transform: translateY(-200px)
+        transform: translateX(200px)
       &end
         transition: all .5s
-        transform: translateY(-200px)
+        transform: translateX(200px)
         opacity: 0
     .slider__navi a
       display: block
@@ -37,21 +37,22 @@
         margin-top: 298px
       &.active
         background: white
-  background: url(./third_section_bg.png) center center/cover no-repeat
+  user-select: none
+  background: url(../../../img/third_section_bg.png) center center/cover no-repeat
   background-attachment: fixed
   position: relative
   padding: 130px 0
   &:before
-    background: url(./white_separator2.png)
+    background: url(../../../img/white_separator2.png)
     background-position-y: top
     top: 0px
     +separator
   &:after
-    background: url(./black_separator.png)
+    background: url(../../../img/black_separator.png)
     background-position-y: bottom
     bottom: 0px
     +separator
-  transform: 1s all
+  transform: .5s all
   .countries
     height: 700px
     transform-origin: right center
