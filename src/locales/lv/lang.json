@@ -7,7 +7,7 @@
     "map": "Karte",
     "features": "Iespējas",
 
-    "joinNplay": "Nāc un spēlē!",
+    "joinNplay": "Sākam jau 9. martā💫",
     "apply": "Pieteikties",
 
     "modal_name":"Your name",
@@ -32,10 +32,14 @@
     "money_title": "Bezmaksas un bez licences",
     "money_desc": "Nav svarīgi, kādu palaišanas programmu izmantojat. Pievienojieties spēlei ar vai bez licences.",
 
+    "villagers": "Iedzīvotāji",
+
     "rank_nims": "Tehniskais administrators",
     "rank_frammy": "Organizēšana, mārketings",
     "desc_nims": "Labs admins",
     "desc_frammy": "Ļauns admins",
+    "rank_doritos": "Radošais direktors",
+    "desc_doritos": "Mazais admins",
 
     "lvTime": "Pirms ",
 
@@ -74,6 +78,8 @@
     "minute&1": " minūtes",
     "minute&2": " minūtēm",
     "minutes": " minūtēm",
+
+    
 
     "loading": "ielāde..."
 }

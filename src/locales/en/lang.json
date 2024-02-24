@@ -3,11 +3,11 @@
     "rules": "Rules",
     "donations": "Donuts",
     "forPlayers": "Players",
-    "news": "News",
+    "news": "Breaking news",
     "map": "Map",
     "features": "Features",
 
-    "joinNplay": "Join and play!",
+    "joinNplay": "Launch on March 9💫",
     "apply": "Apply now",
 
     "modal_name":"Tavs vārds",
@@ -32,10 +32,14 @@
     "money_title": "Free and no license",
     "money_desc": "It doesn't matter what launcher you use. Join the game with or without a license.",
 
+    "villagers": "Citizens",
+
     "rank_nims": "Technical admin",
     "rank_frammy": "Organization, marketing",
     "desc_nims": "Kind admin",
     "desc_frammy": "Evil admin",
+    "rank_doritos": "Creative director",
+    "desc_doritos": "smol admin",
 
     "lvTime": "",
 
@@ -74,6 +78,8 @@
     "minute&1": " minutes ago",
     "minute&2": " minutes ago",
     "minutes": " minutes ago",
+
+    
 
     "loading": "loading..."
 }
