@@ -130,7 +130,7 @@ export default function News() {
   const fetchNews = async () => {
     try {
       const res = await axios.get(
-        "https://scanditestframmy.000webhostapp.com/php/getNews.php",
+        "https://files.farlands.co/getNews.php",
         {}
       );
       if (res.data) {
@@ -163,8 +163,8 @@ export default function News() {
 
   return (
     <div className="news">
-      <h1 className="news_title">{t('news')}</h1>
       <Container>
+      <h1 className="news_title">{t('news')}</h1>
         <Row>
           {news.length ? (
             news.map((list, i) =>
@@ -173,8 +173,7 @@ export default function News() {
                   <Card
                     key={i}
                     text="white"
-                    style={{ width: "18rem" }}
-                    className="news_post w-75"
+                    className="news_post"
                   >
                     <Card.Body>
                       <h2 className="news_post_title">{list.Title}</h2>

@@ -69,15 +69,12 @@ export default function Countries(props) {
                       <div className="country_box position-relative">
                         <div className="country_info">
                           <div className="country_name">{list.Name}</div>
-                          <div className="country_descr cities">
+                          <div className="country_mayor country_descr cities">
                             {list.Mayor}
                           </div>
                           <div className="country_descr">
-                            Жители: {list.Players.substring(0, list.Players.length-1)}
+                            {props.t('villagers')}: {list.Players.substring(0, list.Players.length-1)}
                           </div>
-                          {/* <div className="country_descr">
-                            <img src={list.Flag} alt="country flag" />
-                          </div> */}
                         </div>
                         <div className="country_skin">
                           <div className="country_pres">{list.Mayor}</div>

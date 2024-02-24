@@ -16,10 +16,10 @@
       &start
         transition: all .1s
         opacity: 0
-        transform: translateX(200px)
+        transform: translateY(200px)
       &end
         transition: all .5s
-        transform: translateX(200px)
+        transform: translateY(200px)
         opacity: 0
     .slider__navi a
       display: block
@@ -59,7 +59,18 @@
     .country
       height: inherit
       width: inherit
-      z-index: 0
+      position: relative
+      z-index: 1
+      &::after
+        content: ''
+        position: absolute
+        top: 0
+        background: rgba(0, 0, 0, 0.4)
+        height: 100%
+        width: 100%
+        backdrop-filter: blur(2px)
+        border-radius: 2.1rem
+        z-index: -1
       &_
         &box
           height: inherit
@@ -68,7 +79,7 @@
           margin-right: 20%
           margin-left: 5%
         &name
-          font-size: 400%
+          font-size: 4vw
           padding-top: 50px
           color: white
         &descr
@@ -77,11 +88,14 @@
           color: #bbbbbb
           font-size: 100%
           line-height: 20px
+        &mayor
+          font-weight: 700
+
         &skin
           position: absolute
-          top: 70px
+          top: 200px
           right: 0
-          z-index: -1
+          z-index: 0
           height: 80%
           img
             right: -5%

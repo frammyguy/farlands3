@@ -27,7 +27,7 @@ export default function Header() {
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">
             <Nav.Link href="/">{t("main")}</Nav.Link>
-            <Nav.Link href="https://frammmy.notion.site/be8e855d197e4d748b431eef7a0204c8?v=ff6505bf38154093ac75239dfaba8f65&pvs=74">{t("rules")}</Nav.Link>
+            <Nav.Link disabled href="">{t("rules")}</Nav.Link>
             <Nav.Link href="https://www.donationalerts.com/r/farlandsmc">
               {t("donations")}
             </Nav.Link>
@@ -35,10 +35,10 @@ export default function Header() {
               <NavDropdown.Item href="/news">
                 {t("news")}
               </NavDropdown.Item>
-              <NavDropdown.Item href="http://31.214.166.21:8100/">
+              <NavDropdown.Item disabled href="/map">
                 {t("map")}
               </NavDropdown.Item>
-              <NavDropdown.Item href="/features">
+              <NavDropdown.Item disabled href="">
                 {t("features")}
               </NavDropdown.Item>
             </NavDropdown>

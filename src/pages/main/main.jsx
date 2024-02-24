@@ -2,7 +2,6 @@ import React from "react";
 import { useEffect } from "react";
 import axios from "axios";
 
-import "./main.sass";
 import useCustomTranslation from "../../locales/useCustomTranslation";
 import First from "./first/first";
 import Benefits from "./benefits/benefits";
@@ -16,7 +15,7 @@ export default function Main() {
   const fetchCountries = async () => {
     try {
       const res = await axios.get(
-        "https://scanditestframmy.000webhostapp.com/php/getCountries.php",
+        "https://files.farlands.co/getCountries.php",
         {}
       );
       if (res.data) {

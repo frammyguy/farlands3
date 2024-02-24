@@ -89,6 +89,14 @@ export default function Admin(props) {
             desc={props.t('desc_nims')}
           />
           <AdminBox
+            name="DonDoritos"
+            inst="https://www.instagram.com/latyshonoka/"
+            disc="https://discord.com/users/781218693572067359"
+            tele="https://t.me/Barbariskii"
+            rank={props.t('rank_doritos')}
+            desc={props.t('desc_doritos')}
+          />
+          <AdminBox
             name="frammy"
             inst="https://www.instagram.com/vladan4igg/"
             disc="https://discord.com/users/440231926746578955"

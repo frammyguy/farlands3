@@ -1,85 +1,145 @@
 import React from "react";
 import { useState } from "react";
+import axios from "axios";
 
 import { Button } from "react-bootstrap";
 import Modal from "react-bootstrap/Modal";
 import Form from "react-bootstrap/Form";
 import Container from "react-bootstrap/Container";
+import InputGroup from "react-bootstrap/InputGroup";
 import "./first.sass";
 import useCustomTranslation from "../../../locales/useCustomTranslation";
 
 export default function First(props) {
   const { t } = useCustomTranslation();
   const [show, setShow] = useState(false);
+  const state = {
+    name: "",
+    age: "",
+    telegram: "",
+    link: "",
+    referal: "",
+    nickname: "",
+  };
 
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
-  const [validated, setValidated] = useState(false);
+  const handleChange = (event) => {
+    switch (event.target.name) {
+      case "name":
+        state.name = event.target.value;
+        break;
+      case "age":
+        state.age = event.target.value;
+        break;
+      case "telegram":
+        state.telegram = event.target.value;
+        break;
+      case "link":
+        state.link = event.target.value;
+        break;
+      case "referal":
+        state.referal = event.target.value;
+        break;
+      case "nickname":
+        state.nickname = event.target.value;
+        break;
+      default:
+        break;
+    }
+    console.log(state);
+  };
 
   const handleSubmit = (event) => {
-    const form = event.currentTarget;
-    if (form.checkValidity() === false) {
-      event.preventDefault();
-      event.stopPropagation();
+    try {
+      axios.post(
+        "https://files.farlands.co/addUser.php?name=" +state.name + "&age=" + state.age + "&telegram=" + state.telegram + "&link=" + state.link + "&referal=" + state.referal + "&nickname=" + state.nickname
+      );
+    } catch (err) {
+      console.log(err);
     }
-
-    setValidated(true);
   };
 
   return (
     <div className="main">
-      <Modal variant="dark" size="lg" show={show} onHide={handleClose}>
-        {/* <Modal.Header closeButton>
-          <Modal.Title>Modal heading</Modal.Title>
-        </Modal.Header> */}
+      <Modal variant="dark" show={show} onHide={handleClose}>
         <Modal.Body>
-          <Form>
-            <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
-              <Form.Label>{t('modal_name')}</Form.Label>
+          <Form onSubmit={handleSubmit}>
+            <Form.Group>
+              <Form.Label>{t("modal_name")}</Form.Label>
               <Form.Control
+                name="name"
                 type="text"
                 required
-                autoFocus
+                onChange={handleChange}
               />
-              <Form.Label>{t('modal_age')}</Form.Label>
+              <Form.Control.Feedback type="invalid">
+                Please choose a username.
+              </Form.Control.Feedback>
+            </Form.Group>
+            <Form.Group>
+              <Form.Label>{t("modal_age")}</Form.Label>
               <Form.Control
+                name="age"
                 type="number"
                 required
-              />
-              <Form.Label>{t('modal_telegram')}</Form.Label>
-              <Form.Control
-                type="text"
-                required
-              />
-              <Form.Label>{t('modal_link')}</Form.Label>
-              <Form.Control
-                type="text"
-                required
-              />
-              <Form.Label>{t('modal_referal')}</Form.Label>
-              <Form.Control
-                type="text"
-              />
-              <Form.Label>{t('modal_nickname')}</Form.Label>
-              <Form.Control
-                type="text"
-                required
+                onChange={handleChange}
               />
             </Form.Group>
+            <Form.Group>
+              <Form.Label>{t("modal_telegram")}</Form.Label>
+              <InputGroup hasValidation>
+                <InputGroup.Text id="inputGroupPrepend">@</InputGroup.Text>
+                <Form.Control
+                  name="telegram"
+                  type="text"
+                  required
+                  onChange={handleChange}
+                />
+              </InputGroup>
+            </Form.Group>
+            <Form.Group>
+              <Form.Label>{t("modal_link")}</Form.Label>
+              <Form.Control
+                name="link"
+                type="text"
+                required
+                onChange={handleChange}
+              />
+            </Form.Group>
+            <Form.Group>
+              <Form.Label>{t("modal_referal")}</Form.Label>
+              <Form.Control
+                name="referal"
+                type="text"
+                required
+                onChange={handleChange}
+              />
+            </Form.Group>
+            <Form.Group>
+              <Form.Label>{t("modal_nickname")}</Form.Label>
+              <Form.Control
+                name="nickname"
+                type="text"
+                required
+                onChange={handleChange}
+              />
+            </Form.Group>
+            <Modal.Footer>
+              <Button variant="secondary" onClick={handleClose}>
+                Close
+              </Button>
+              <Button variant="primary" type="submit">
+                Save Changes
+              </Button>
+            </Modal.Footer>
           </Form>
         </Modal.Body>
-        <Modal.Footer>
-          <Button variant="secondary" onClick={handleClose}>
-            Close
-          </Button>
-          <Button variant="primary" type="submit">
-            Save Changes
-          </Button>
-        </Modal.Footer>
       </Modal>
       ;
       <Container>
-        <div className="main-logo">FarLands</div>
+        <h5 className="main-logo-above">сервер реально супер крутой</h5>
+        <h1 className="main-logo">FarLands</h1>
         <div
           id="subs_click"
           className="main_desc text-light text-opacity-75 text-center"

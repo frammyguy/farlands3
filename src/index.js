@@ -8,7 +8,6 @@ import './index.sass';
 import Header from './pages/header/header';
 import Main from './pages/main/main';
 import News from './pages/news/news';
-import Features from './pages/features/features';
 import Footer from './pages/footer/footer';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -20,7 +19,6 @@ root.render(
         <Routes>
           <Route path="/" element={<Main />} />
           <Route path="/news" element={<News />} />
-          <Route path="/features" element={<Features />} />
         </Routes>
       <Footer />
       </BrowserRouter>
