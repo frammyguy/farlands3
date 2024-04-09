@@ -7,15 +7,18 @@
     "map": "Map",
     "features": "Features",
 
-    "joinNplay": "Launch on March 9💫",
+    "joinNplay": "💫 We're already playing! Are you? 💫",
     "apply": "Apply now",
 
-    "modal_name":"Tavs vārds",
-    "modal_age":"Tavs vecums",
-    "modal_telegram":"Jūsu telegrams",
-    "modal_link":"Saite uz citu sociālo tīklu (nevis pasts!)",
-    "modal_referal":"Referals (ja esat uzaicināts)",
-    "modal_nickname":"Jūsu nickname",
+    "modal_name":"Your name",
+    "modal_age":"Your age",
+    "modal_telegram":"Your telegram",
+    "modal_link":"Link to another social network (not mail!)",
+    "modal_referal":"Referral (Or where did you find out about us)",
+    "modal_nickname":"Jūsu Minecraft nickname",
+    "modal_about":"Write about yourself",
+    "submit":"Send",
+    "cancel":"Cancel",
 
     "promo": "Private Minecraft server",
     "promo_desc": "Vanilla server where you can develop together with other players, build cities, strengthen the internal economy and even create your own state!",
@@ -32,6 +35,7 @@
     "money_title": "Free and no license",
     "money_desc": "It doesn't matter what launcher you use. Join the game with or without a license.",
 
+    "mayor": "Mayor",
     "villagers": "Citizens",
 
     "rank_nims": "Technical admin",
@@ -79,7 +83,11 @@
     "minute&2": " minutes ago",
     "minutes": " minutes ago",
 
-    
+    "timer-Days": "days",
+    "timer-Hours": "hours",
+    "timer-Mins": "minutes",
+    "timer-Seconds": "seconds",
+    "tillStart": "Until the start",
 
     "loading": "loading..."
 }

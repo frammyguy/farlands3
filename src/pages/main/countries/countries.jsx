@@ -1,6 +1,4 @@
-import React from "react";
 import { Link } from "react-router-dom";
-import $ from "jquery";
 
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
@@ -9,30 +7,43 @@ import Col from "react-bootstrap/Col";
 import "./countries.sass";
 
 const slideNavFunc = () => {
-  $('.slide-nav').on('click', function(e) {
-      e.preventDefault();
-      // get current slide
-      var current = $('.flex--active').data('slide'),
-      // get button data-slide
-      next = $(this).data('slide');
-  
-      $('.slide-nav').removeClass('active');
-      $(this).addClass('active');
-    
-      if (current === next) {
-        return false;
-      } else {
-        $('.blocks').find('.country[data-slide=' + next + ']').addClass('flex--preStart');
-        $('.flex--active').addClass('animate--end');
-        setTimeout(function() {
-          $('.flex--preStart').removeClass('animate--start flex--preStart').addClass('flex--active');
-          $('.animate--end').addClass('animate--start').removeClass('animate--end flex--active');
-        }, 100);
-      }
+  let slideNav = document.querySelectorAll(".slide-nav");
+  slideNav.forEach((el) => {
+    el.addEventListener("click", function () {
+      slideNav.forEach((el) => {
+        el.classList.remove("active");
+        let current = document.getElementsByClassName("flex--active")[0].dataset.slide;
+        let next = this.dataset.slide;
+        if (current === next) {
+          return false;
+        } else {
+          document
+            .querySelector(".blocks")
+            .querySelector(".country[data-slide='" + next + "']")
+            .classList.add("flex--preStart");
+          document
+            .querySelector(".flex--active")
+            .classList.add("animate--end");
+          setTimeout(function () {
+            document
+              .querySelector(".flex--preStart")
+              .classList.remove("animate--start", "flex--preStart")
+              .classList.add("flex--active");
+            document
+              .querySelector(".animate--end")
+              .classList.add("animate--start")
+              .classList.remove("animate--end", "flex--active");
+          }, 100);
+        }
+      });
+      this.classList.add("active");
     });
-}
+  });
+};
+
 
 export default function Countries(props) {
+  
   slideNavFunc();
   return (
     <div className="countrylist">
@@ -68,12 +79,17 @@ export default function Countries(props) {
                     >
                       <div className="country_box position-relative">
                         <div className="country_info">
-                          <div className="country_name">{list.Name}</div>
+                          
+                          <div className="country_name"><img className="country_flag" src={list.Flag} alt="country flag" />{list.Name}</div>
                           <div className="country_mayor country_descr cities">
-                            {list.Mayor}
+                            {props.t('mayor')}: {list.Mayor}
                           </div>
                           <div className="country_descr">
                             {props.t('villagers')}: {list.Players.substring(0, list.Players.length-1)}
+                          </div>
+                          <div className="country_descr">
+                            <br />
+                            {list.Description.replaceAll('. ', ".\n")}
                           </div>
                         </div>
                         <div className="country_skin">

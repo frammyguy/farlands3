@@ -15,7 +15,7 @@
   width: 100%
 
 .main
-  background: url(../../../img/main_bg.png) center center/cover no-repeat
+  background: url(../../../img/main_bg.webp) center center/cover no-repeat
   background-attachment: fixed
   height: 900px
   padding-bottom: 200px
@@ -23,10 +23,18 @@
   display: flex
   align-items: center
   &:after
-    background: url(../../../img/white_separator.png)
+    background: url(../../../img/white_separator.webp)
     background-position-y: bottom
     bottom: 0px
     +separator
+  &_apply_link
+    text-decoration: none
+    color: white
+    &:hover
+      color: black
+    a
+      text-decoration: none
+      color: inherit
   &-logo
     font-family: 'Minecraft'
     font-weight: 300
@@ -40,8 +48,23 @@
       filter: drop-shadow(0px 0 10px rgb(255 255 255 / 0.25))
       cursor: default
     &-above
-      color: #ffffff3a
+      color: #ffffff1f
       text-align: right
       width: 80%
       margin-bottom: 0
       font-size: 16px
+  &_links
+    position: absolute
+    z-index: 1
+    height: 30px
+    svg
+      height: 100%
+      width: auto
+      margin: 0 5px
+      transition: all .5s ease
+      color: #ffffff71
+      &:hover
+        transform: scale(1.2)
+        color: white
+    bottom: 80px
+    right: 20px

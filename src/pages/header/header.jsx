@@ -8,7 +8,7 @@ import NavDropdown from "react-bootstrap/NavDropdown";
 import "./header.sass";
 import useCustomTranslation from "../../locales/useCustomTranslation";
 import { LanguageSwitcher } from "../../locales/useCustomTranslation";
-import Logo from "../../img/logo.png";
+import Logo from "../../img/favicon.webp";
 
 export default function Header() {
   const { t } = useCustomTranslation();
@@ -27,7 +27,7 @@ export default function Header() {
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">
             <Nav.Link href="/">{t("main")}</Nav.Link>
-            <Nav.Link disabled href="">{t("rules")}</Nav.Link>
+            <Nav.Link href="/rules">{t("rules")}</Nav.Link>
             <Nav.Link href="https://www.donationalerts.com/r/farlandsmc">
               {t("donations")}
             </Nav.Link>
@@ -35,7 +35,7 @@ export default function Header() {
               <NavDropdown.Item href="/news">
                 {t("news")}
               </NavDropdown.Item>
-              <NavDropdown.Item disabled href="/map">
+              <NavDropdown.Item href="/map">
                 {t("map")}
               </NavDropdown.Item>
               <NavDropdown.Item disabled href="">

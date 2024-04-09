@@ -33,8 +33,9 @@ export default function Main() {
             Flag: row[6],
             Capital: row[7],
             BG: row[8],
+            Description: row[9]
           };
-          if (c.length < 3) c.push(obj);
+          if (c.length < 5) c.push(obj);
         });
         setCountries(c);
       }

@@ -44,6 +44,7 @@ const LanguageSwitcher = () => {
       className="btn btn-light"
       value={i18n.language}
       onChange={handleLanguageChange}
+      aria-label="Language switcher"
     >
       <option value="en">English</option>
       <option value="lv">Latviešu</option>

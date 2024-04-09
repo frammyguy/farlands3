@@ -7,15 +7,18 @@
     "map": "Karte",
     "features": "Iespējas",
 
-    "joinNplay": "Sākam jau 9. martā💫",
+    "joinNplay": "💫 Mēs jau spēlējam! Un tu? 💫",
     "apply": "Pieteikties",
 
-    "modal_name":"Your name",
-    "modal_age":"Your age",
-    "modal_telegram":"Your telegram",
-    "modal_link":"Link to another social network (not mail!)",
-    "modal_referal":"Referral (if you were invited)",
-    "modal_nickname":"Your nickname",
+    "modal_name":"Jūsu vārds",
+    "modal_age":"Jūsu vecums",
+    "modal_telegram":"Jūsu Telegram",
+    "modal_link":"Saite uz citu sociālo tīklu",
+    "modal_referal":"Referral (Vai kur par mums uzzinājis?)",
+    "modal_nickname":"Jūsu Minecraft lietotājvārds",
+    "modal_about":"Uzrakstiet par sevi",
+    "submit":"Sūtīt",
+    "cancel":"Atcelt",
 
     "promo": "Privātais Minecraft serveris",
     "promo_desc": "Vanilla serveris, kurā var attīstīties kopā ar citiem spēlētājiem, būvēt pilsētas, stiprināt iekšējo ekonomiku un pat izveidot savu valsti!",
@@ -32,6 +35,7 @@
     "money_title": "Bezmaksas un bez licences",
     "money_desc": "Nav svarīgi, kādu palaišanas programmu izmantojat. Pievienojieties spēlei ar vai bez licences.",
 
+    "mayor": "Valdnieks",
     "villagers": "Iedzīvotāji",
 
     "rank_nims": "Tehniskais administrators",
@@ -79,7 +83,11 @@
     "minute&2": " minūtēm",
     "minutes": " minūtēm",
 
-    
+    "timer-Days": "dienas",
+    "timer-Hours": "stundas",
+    "timer-Mins": "minūtes",
+    "timer-Seconds": "sekundes",
+    "tillStart": "Līdz sākumam:",
 
     "loading": "ielāde..."
 }
